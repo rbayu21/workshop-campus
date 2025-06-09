@@ -87,7 +87,7 @@
                 <div class="col-sm-4 text-center mb-3">
                     <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
                     <h4 class="font-weight-bold">Phone</h4>
-                    <p>+62 8381 692</p>
+                    <p>+62 899 8381 692</p>
                 </div>
                 <div class="col-sm-4 text-center mb-3">
                     <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
@@ -101,31 +101,14 @@
                 <div class="col-md-6 pb-5">
                     <div class="contact-form">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="control-group">
-                                <input type="text" class="form-control bg-transparent p-4" id="name" placeholder="Your Name"
-                                    required="required" data-validation-required-message="Please enter your name" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <input type="email" class="form-control bg-transparent p-4" id="email" placeholder="Your Email"
-                                    required="required" data-validation-required-message="Please enter your email" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control bg-transparent p-4" id="subject" placeholder="Subject"
-                                    required="required" data-validation-required-message="Please enter a subject" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control bg-transparent py-3 px-4" rows="5" id="message" placeholder="Message"
-                                    required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">Send
-                                    Message</button>
+                        <form name="sentMessage" id="contactForm" method="POST" action="send_message.php" novalidate="novalidate">
+                            <div class="text-center mt-4">
+                                <a href="https://wa.me/628998381692?text=Halo%2C%20saya%20tertarik%20dengan%20informasi%20workshop%20kampus." target="_blank" class="btn btn-success mx-2">
+                                    <i class="fab fa-whatsapp"></i> Chat via WhatsApp
+                                </a>
+                                <a href="mailto:ranggabayu225@gmail.com?subject=Informasi%20Workshop&body=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20workshop." class="btn btn-danger mx-2">
+                                    <i class="far fa-envelope"></i> Kirim Email
+                                </a>
                             </div>
                         </form>
                     </div>
