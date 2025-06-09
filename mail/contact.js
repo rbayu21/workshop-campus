@@ -1,9 +1,19 @@
 $(function () {
 
-    $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
-        preventSubmit: true,
-        submitError: function ($form, event, errors) {
-        },
+   $('#contactForm').on('submit', function (e) {
+    e.preventDefault();
+    // Submit logic kamu di sini
+
+    // Setelah form sukses dikirim:
+    $('#success').html(`
+        <div class="alert alert-success">
+            Terima kasih telah menghubungi kami. Kami akan segera merespons pesan Anda.
+        </div>
+    `);
+
+    // Reset form
+    $('#contactForm')[0].reset();
+});
         submitSuccess: function ($form, event) {
             event.preventDefault();
             var name = $("input#name").val();
